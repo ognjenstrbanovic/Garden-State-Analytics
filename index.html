@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+        <style type="text/css">
+            body { background: lightcyan !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+         </style>
+        
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("navbar.html");
+});
+</script>
+<!--end of Navigation bar-->
+        
+
+        
+        <div class="container col-sm-4">
+            <h3>LATITUDE</h3>
+
+            <img class="img-responsive" alt="" src="Resources/assets/Images/temp.png">
+            
+            
+            <p> 
+                
+              Website for artificial intelligence project. GS analytics Team 
+
+                  </p>
+                  
+        </div>
+
+        <div class="col-sm-4">
+
+            <h3>Visualisations</h3>
+            <br>
+            
+
+
+            <div class="container">
+                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
+                    <img src="Resources/assets/Images/cloudiness.png" class="img-responsive">
+                </div>
+                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
+                    <img src="Resources/assets/Images/temp.png" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
+                    <img src="Resources/assets/Images/windspeed.png" class="img-responsive">
+                </div>
+                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
+                    <img src="Resources/assets/Images/humidity.png" class="img-responsive">
+                </div>
+            </div>
+           
+  
+        </div>
+    
+        
+    </body>
+</html>
+
