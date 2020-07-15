@@ -1,12 +1,14 @@
 body {
     background-color: powderblue !important;
-
-    
   }
+
   h1 {
     color: blue;
   }
-  ul.nav a:hover { color: #fff !important; }
+
+  ul.nav a:hover {
+    color: #fff !important;
+  }
 
   .navbar {
     min-height: 80px;
@@ -23,6 +25,10 @@ body {
     margin-top: 23px;
     padding: 9px 10px !important;
   }
+
+.center-captions {
+  text-align: center;
+}
   
   @media (min-width: 768px) {
     .navbar-nav > li > a {
@@ -32,5 +38,3 @@ body {
       line-height: 27px;
     }
   }
- 
- 

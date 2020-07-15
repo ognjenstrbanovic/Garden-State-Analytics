@@ -2,81 +2,82 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="index.css">
-        <title>Bootstrap Example</title>
+        <title>G.S. Analytics</title>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                </link>
+            </meta>
+        </meta>
     </head>
-    <body>
-        
-        <style type="text/css">
-            body { background: lightcyan !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-         </style>
-        
 
+    <body>
+        <style type="text/css">
+            body {background: lightcyan !important} /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+        </style>
+    </body>
 <!--Navigation bar-->
 <div id="nav-placeholder">
 </div>
 <script>
-$(function(){
+$(function() {
   $("#nav-placeholder").load("navbar.html");
 });
 </script>
-<!--end of Navigation bar-->
-        
-
-        
-        <div class="container col-sm-4">
-            <h3>LATITUDE</h3>
-
-            <img class="img-responsive" alt="" src="Resources/assets/Images/temp.png">
-            
-            
-            <p> 
-                
-              Group Name: G.S. Analytics
-Group Members: Aditya Bhatnagar, Ognjen Strbanovic, Sean Wayland, Tejas Naik, Todd Franklin, and Tyler M. Neher
- 
-        	The G.S. (garden state) Analytics group chose to study a Kaggle dataset titled “Rain in Australia”. The dataset contains a years worth of climate statistics for about 25 Australian locations. Our goal is to use the Logistic Regression, Neural Network, SVM, and Naïve Bayes ML models and compare the effectiveness of each towards predicting whether rain will fall tomorrow in each location (yes or no); We used the various machine learning techniques to predict the outcome. The data was already labeled and contained the outcome we were trying to predict. First we cleaned the data. We removed some rows with null values and depending on the model chosen we removed some variables.  The machine models split the data into groups ( testing and training ) and used part of the data to train the model and then the other part to test our model.
- 
-We cleaned the dataset using pandas and visualized it in Pandas DataFrames contained in jupyter notebooks. The notebooks and code we created is presented in this website. Then we use machine learning libraries to create an output and compare our models’ accuracies with that of the actual rainfall outcome. We also used Tableau to visualize our dataset and provide some insights into it. An overview of some of the technologies that we used: Python, Jupyter Notebook, pandas, Matplotlib, TensorFlow, Keras, Requests, Tableau, HTML, CSS, JavaScript, and AWS S3.
-
-
-                  </p>
-                  
-        </div>
-
-        <div class="col-sm-4">
-
-            <h3>Visualisations</h3>
-            <br>
-            
-
-
-            <div class="container">
-                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
-                    <img src="Resources/assets/Images/cloudiness.png" class="img-responsive">
-                </div>
-                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
-                    <img src="Resources/assets/Images/temp.png" class="img-responsive">
-                </div>
+<!--end of Navigation bar-->  
+    <div class="container col-sm-4">
+        <h3>G.S. ANALYTICS</h3>
+        <p> 
+            Group Name: G.S. Analytics; 
+            Group Members: Aditya Bhatnagar, Ognjen Strbanovic, Sean Wayland, Tejas Naik, Todd Franklin, and Tyler M. Neher; 
+            The G.S.(Garden State) Analytics group chose to study a Kaggle dataset titled “Rain in Australia”. 
+            The dataset contains a years worth of climate statistics for about 25 Australian locations. 
+            Our goal is to use the Logistic Regression, Neural Network, SVM, and Naïve Bayes ML models and compare the effectiveness of each towards predicting whether rain will fall tomorrow in each location (yes or no). 
+            We used the various machine learning techniques to predict the outcome. 
+            The data was already labeled and contained the outcome we were trying to predict. 
+            First we cleaned the data. 
+            We removed some rows with null values, and depending on the model chosen we removed some variables. 
+            The machine models split the data into groups (testing and training) and used part of the data to train the model and then the other part to test our model. 
+            We cleaned the dataset using pandas and visualized it in pandas DataFrames contained in Jupyter Notebooks. 
+            The notebooks and code we created is presented in this website. 
+            Then we use machine learning libraries to create an output and compare our models’ accuracies with that of the actual rainfall outcome. 
+            Most of the models predicted the outcome with around 85% accuracy. The Kernel SVM was marginally better than the others. 
+            We also used Tableau to visualize our dataset and provide some insights into it. 
+            An overview of some of the technologies that we used: Python, Jupyter Notebook, pandas, Matplotlib, TensorFlow, Keras, Requests, Tableau, HTML, CSS, JavaScript, and AWS S3.
+        </p>      
+    </div>
+    <div class="col-sm-4">
+        <div class="container">
+            <h3 style="padding-left: 10px; padding-right: 10px;">VISUALIZATIONS OF MODEL ACCURACY: Click image to view the related model.</h3>
+            <div class="col-md-3" style="padding-left: 10px; padding-right: 10px;">
+                <a href="/rain_K_N_N.html">
+                    <img src="Resources/assets/Images/CMKNN.png" class="img-responsive">
+                    <figcaption class="center-captions">KNN Confusion Matrix</figcaption>
+                </a>
             </div>
-
-            <div class="container">
-                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
-                    <img src="Resources/assets/Images/windspeed.png" class="img-responsive">
-                </div>
-                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
-                    <img src="Resources/assets/Images/humidity.png" class="img-responsive">
-                </div>
+            <div class="col-md-3" style="padding-left: 10px; padding-right: 10px;">
+                <a href = "/rain_kernel_svm.html">
+                    <img src="Resources/assets/Images/CMKsvm.png" class="img-responsive">
+                    <figcaption class="center-captions">Kernal SVM Confusion Matrix</figcaption>
+                </a>
             </div>
-           
-  
         </div>
-    
-        
+        <div class="container">
+            <div class="col-md-3" style="padding-left: 10px; padding-right: 10px;">
+                <a href = "/rain_logistic_reg.html">
+                    <img src="Resources/assets/Images/CMLR.png" class="img-responsive">
+                    <figcaption class="center-captions">Logistic Regression Confusion Matrix</figcaption>
+                </a>
+            </div>
+            <div class="col-md-3" style="padding-left: 10px; padding-right: 10px;">
+                <a href =  "/rain_kernel_svm.html">
+                    <img src="Resources/assets/Images/CMSVM.png" class="img-responsive">
+                    <figcaption class="center-captions">SVM Confusion Matrix</figcaption>
+                </a>
+            </div>
+        </div>
+    </div>
     </body>
 </html>
-

@@ -1,7 +1,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="index.css">
-        <title>Bootstrap Example</title>
+        <title>Result Summary</title>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -25,3 +25,38 @@ $(function(){
 
 <h3>RESULTS</h3>
 <br>
+
+<div class="container">
+    <div class="row pr-3 pr-5">  
+    <div class="col-md-12 mb-5 ml-5 mt-3">
+        <p>We trained and tested multiple models using the same data set and compared classification accuracy,
+             false positive rate, true positive rate, precision and recall.  We observed that the non linear rbf  Kernel SVM 
+             model predicted the outcome with the highest accuracy. The accuracy predicted was 86.7, with the smallest false positive rate.
+        </p>
+        <p>Logistic regression had the highest prepositive rate, but it had a higher
+             classification error and false positive rate. 
+        </p>
+        <p>Neural Net was the second best performing model, subsequently we compared regular neural net model with
+             a deep neural net and observed that the accuracy of the deep neural net was less than regular net model.
+        </p>
+        <p>K nearest neighbor model was the worst performing model with the least classification accuracy and the highest
+             false positive rate. We modified the K classifier and observed that the difference between training and testing accuracy
+              was continuously decreasing and did not give a clearer result. We tuned the model by selecting a K value in the middle (K10) did 
+              but did not see any significant improvement. In this model training accuracy was higher than testing accuracy which
+              indicated overfitting of the data. See the tableau graphs below for a visual explanation of our results.   
+        </p>
+       
+    </div> 
+</div>
+
+<!-- result Pictire -->
+<div class="container">
+    <div class="row pr-3 pr-5">  
+    <div class="col-md-12 mb-5 ml-5 mt-3">
+        <div class='tableauPlaceholder' id='viz1594767032286' style='position: relative'><noscript><a href=''><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RainModelSummary&#47;Summary&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RainModelSummary&#47;Summary' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RainModelSummary&#47;Summary&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1594767032286');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>  
+    </div>
+       
+    </div> 
+</div>
+
+
