@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="index.css">
-        <title>G.S. Analytics</title>
+        <title>GS Analytics</title>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,21 +18,26 @@
             body {background: lightcyan !important} /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
         </style>
     </body>
+
 <!--Navigation bar-->
+
 <div id="nav-placeholder">
 </div>
+
 <script>
-$(function() {
-  $("#nav-placeholder").load("navbar.html");
-});
+    $(function() {
+    $("#nav-placeholder").load("navbar.html");
+    });
 </script>
-<!--end of Navigation bar-->  
+
+<!--end of Navigation bar-->
+
     <div class="container col-sm-4">
-        <h3>G.S. ANALYTICS</h3>
+        <h2>GS ANALYTICS</h2>
         <p> 
-            Group Name: G.S. Analytics; 
+            Group Name: GS Analytics; 
             Group Members: Aditya Bhatnagar, Ognjen Strbanovic, Sean Wayland, Tejas Naik, Todd Franklin, and Tyler M. Neher; 
-            The G.S.(Garden State) Analytics group chose to study a Kaggle dataset titled “Rain in Australia”. 
+            The GS (<i>Garden State</i>) Analytics group chose to study a Kaggle dataset titled “Rain in Australia”. 
             The dataset contains a years worth of climate statistics for about 25 Australian locations. 
             Our goal is to use the Logistic Regression, Neural Network, SVM, and Naïve Bayes ML models and compare the effectiveness of each towards predicting whether rain will fall tomorrow in each location (yes or no). 
             We used the various machine learning techniques to predict the outcome. 
@@ -46,7 +51,11 @@ $(function() {
             Most of the models predicted the outcome with around 85% accuracy. The Kernel SVM was marginally better than the others. 
             We also used Tableau to visualize our dataset and provide some insights into it. 
             An overview of some of the technologies that we used: Python, Jupyter Notebook, pandas, Matplotlib, TensorFlow, Keras, Requests, Tableau, HTML, CSS, JavaScript, and AWS S3.
-        </p>      
+        </p> 
+        <p><b>GS Analytics - 2020</b></p>
+        <p><i>Find us on GitHub!</i></p>
+        <p><a href="https://github.com/gsanalytics/rainfall">gsanalytics/rainfall</a></p>
+        <p><a href="https://github.com/seanwayland/gsanalytics">seanwayland/gsanalytics</a></p>
     </div>
     <div class="col-sm-4">
         <div class="container">
@@ -79,6 +88,5 @@ $(function() {
                 </a>
             </div>
         </div>
-    </div>
-    </body>
+</body>
 </html>
