@@ -1,10 +1,1 @@
-logistic regression
-neural network
-SVN
-naive bayes 
-
-https://github.com/RutgersCodingBootcamp/RU-JER-DATA-PT-01-2020/blob/master/01-Lesson-Plans/21-Machine-Learning/2/Activities/02-Stu_Voice_Recognition/Solved/Stu_Voice_Recognition.ipynb
-
-
-
-
+In this project, we used four machine learning models to predict whether it will rain tomorrow in Australia, and compared the effectiveness of each model. The models used were: Logistic Regression, Neural Network, SVM, and Naive Bayes.
