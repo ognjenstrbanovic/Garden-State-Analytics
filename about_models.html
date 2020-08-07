@@ -12,85 +12,50 @@
     </head>
     <body>
 
-        
+  <div id="nav-placeholder">
+  </div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("navbar.html");
+    });
+  </script>
 
+  <br><br/>
+  <h3 style="text-align:center">ABOUT THE MODELS USED</h3>
 
-<div id="nav-placeholder">
-</div>
-<script>
-$(function(){
-  $("#nav-placeholder").load("navbar.html");
-});
-</script>
+  <div>
+    <div style="margin-left: 40px"> 
+  <p>
 
-        
-<br/>
-<h3 style="text-align:center">ABOUT THE MODELS USED</h3>
-
-
-
-<div>
-  <div style="margin-left: 40px"> 
-<p>
-
-<h4 style="text-align:left">KNN</h4>
-KNN classification description from wikipedia : 
-
-“In pattern recognition, the k-nearest neighbors algorithm (k-NN) is a non-parametric method proposed by Thomas Cover used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. 
-In k-NN classification, the output is a class membership. An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
-k-NN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until function evaluation. Since this algorithm relies on distance for classification, normalizing the training data can improve its accuracy dramatically “
-The model definition was drawn from this <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">source</a>. 
- 
-We used KNN to classify our rows of data into “will rain tomorrow” and “won’t rain tomorrow”. 
-We removed those values from the dataset and then trained the model to predict them. 
- 
-More about KNN from the library we used <a href="https://scikit-learn.org/stable/modules/neighbors.html">here </a>.
-<br/>
-<br/>
- <h4 style="text-align:left">Support Vector Model</h4>
-
-SVM classification description from wikipedia : 
- 
-“In machine learning, support-vector machines (SVMs, also support-vector networks[1]) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. The Support Vector Machine (SVM) algorithm is a popular machine learning tool that offers solutions for both classification and regression problems. Developed at AT&T Bell Laboratories by Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997), it presents one of the most robust prediction methods, based on the statistical learning framework or VC theory proposed by Vapnik and Chervonekis (1974) and Vapnik (1982, 1995). Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). An SVM model is a representation of the examples as points in space, mapped so that the examples of the separate categories are divided by a clear gap that is as wide as possible. New examples are then mapped into that same space and predicted to belong to a category based on the side of the gap on which they fall.” 
- 
-Source : https://en.wikipedia.org/wiki/Support_vector_machine.
- 
- 
- 
-More about the SVN model we used from the library that we used from this <a href="https://scikit-learn.org/stable/modules/svm.html">link </a>.
- 
- 
-
- 
-<br/>
-<br/>
- <h4 style="text-align:left">Logistic Regression</h4>
-Description of Logistic Regression from wikipedia 
-“Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist. In regression analysis, logistic regression[1] (or logit regression) is estimating the parameters of a logistic model (a form of binary regression). Mathematically, a binary logistic model has a dependent variable with two possible values, such as pass/fail which is represented by an indicator variable, where the two values are labeled "0" and "1". In the logistic model, the log-odds (the logarithm of the odds) for the value labeled "1" is a linear combination of one or more independent variables ("predictors"); the independent variables can each be a binary variable (two classes, coded by an indicator variable) or a continuous variable (any real value). The corresponding probability of the value labeled "1" can vary between 0 (certainly the value "0") and 1 (certainly the value "1"), hence the labeling; the function that converts log-odds to probability is the logistic function, hence the name. The unit of measurement for the log-odds scale is called a logit, from logistic unit, hence the alternative names. Analogous models with a different sigmoid function instead of the logistic function can also be used, such as the probit model; the defining characteristic of the logistic model is that increasing one of the independent variables multiplicatively scales the odds of the given outcome at a constant rate, with each independent variable having its own parameter; for a binary dependent variable this generalizes the odds ratio.” 
- 
-Source definition was extracted from this <a href="https://en.wikipedia.org/wiki/Logistic_regression">link</a>.
-
- 
- Technical details for this particular model are <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html">here</a>.
-
- 
- 
- 
-<br/> 
-<br/><h4 style="text-align:left">Neural Network</h4>
-Neural Network Definition
-Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated.
- 
-Neural networks help us cluster and classify. You can think of them as a clustering and classification layer on top of the data you store and manage. They help to group unlabeled data according to similarities among the example inputs, and they classify data when they have a labeled dataset to train on. (Neural networks can also extract features that are fed to other algorithms for clustering and classification; so you can think of deep neural networks as components of larger machine-learning applications involving algorithms for reinforcement learning, classification and regression.)
- 
-For further information on neural networks and usage, please look <a href="https://pathmind.com/wiki/neural-network#:~:text=Neural%20networks%20are%20a%20set,labeling%20or%20clustering%20raw%20input">here</a>.
- 
- 
- 
-</p>
-</div>
- 
- 
-
-
- 
+  <h4 style="text-align:left">KNN</h4>
+  KNN classification description from Wikipedia: 
+  “In pattern recognition, the k-nearest neighbors algorithm (k-NN) is a non-parametric method proposed by Thomas Cover used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. 
+  In k-NN classification, the output is a class membership. An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor. 
+  k-NN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until function evaluation. Since this algorithm relies on distance for classification, normalizing the training data can improve its accuracy dramatically. 
+  The model definition was drawn from <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">this source</a>. 
+  We used KNN to classify our rows of data into “will rain tomorrow” and “won’t rain tomorrow”. 
+  We removed those values from the dataset and then trained the model to predict them. 
+  More about KNN from the library we used <a href="https://scikit-learn.org/stable/modules/neighbors.html">here</a>.
+  <br><br/>
+  <br><br/>
+  <h4 style="text-align:left">Support Vector Model</h4>
+  SVM classification description from Wikipedia: 
+  “In machine learning, support-vector machines (SVMs, also support-vector networks[1]) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. The Support Vector Machine (SVM) algorithm is a popular machine learning tool that offers solutions for both classification and regression problems. Developed at AT&T Bell Laboratories by Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Vapnik et al., 1997), it presents one of the most robust prediction methods, based on the statistical learning framework or VC theory proposed by Vapnik and Chervonekis (1974) and Vapnik (1982, 1995). Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). An SVM model is a representation of the examples as points in space, mapped so that the examples of the separate categories are divided by a clear gap that is as wide as possible. New examples are then mapped into that same space and predicted to belong to a category based on the side of the gap on which they fall.” 
+  Source: https://en.wikipedia.org/wiki/Support_vector_machine. 
+  More about the SVN model we used from the library that we used from <a href="https://scikit-learn.org/stable/modules/svm.html">this link</a>.
+  <br><br/>
+  <br><br/>
+  <h4 style="text-align:left">Logistic Regression</h4>
+  Description of Logistic Regression from Wikipedia: 
+  “Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist. In regression analysis, logistic regression[1] (or logit regression) is estimating the parameters of a logistic model (a form of binary regression). Mathematically, a binary logistic model has a dependent variable with two possible values, such as pass/fail which is represented by an indicator variable, where the two values are labeled "0" and "1". In the logistic model, the log-odds (the logarithm of the odds) for the value labeled "1" is a linear combination of one or more independent variables ("predictors"); the independent variables can each be a binary variable (two classes, coded by an indicator variable) or a continuous variable (any real value). The corresponding probability of the value labeled "1" can vary between 0 (certainly the value "0") and 1 (certainly the value "1"), hence the labeling; the function that converts log-odds to probability is the logistic function, hence the name. The unit of measurement for the log-odds scale is called a logit, from logistic unit, hence the alternative names. Analogous models with a different sigmoid function instead of the logistic function can also be used, such as the probit model; the defining characteristic of the logistic model is that increasing one of the independent variables multiplicatively scales the odds of the given outcome at a constant rate, with each independent variable having its own parameter; for a binary dependent variable this generalizes the odds ratio.” 
+  Source definition was extracted from <a href="https://en.wikipedia.org/wiki/Logistic_regression">this link</a>. 
+  Technical details for this particular model are <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html">here</a>.
+  <br><br/>
+  <br><br/>
+  <h4 style="text-align:left">Neural Network</h4>
+  Neural Network Definition: 
+  Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated. 
+  Neural networks help us cluster and classify. You can think of them as a clustering and classification layer on top of the data you store and manage. They help to group unlabeled data according to similarities among the example inputs, and they classify data when they have a labeled dataset to train on. (Neural networks can also extract features that are fed to other algorithms for clustering and classification; so you can think of deep neural networks as components of larger machine-learning applications involving algorithms for reinforcement learning, classification and regression.) 
+  For further information on neural networks and usage, please look <a href="https://pathmind.com/wiki/neural-network#:~:text=Neural%20networks%20are%20a%20set,labeling%20or%20clustering%20raw%20input">here</a>. 
+  </p>
+  </div>
